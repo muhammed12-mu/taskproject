@@ -1,0 +1,334 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+/* background-color: seagreen; */
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top: 20px;
+/* height: 100vh; */
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container{
+    width: 35%;
+    /* height: 80%; */
+    margin: auto;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px black;
+}
+  
+
+.header-body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+    margin-top: 20px;
+    column-gap: 120px;
+}
+
+.task > button:nth-child(1) {
+    background-color: seagreen;
+    border-radius: 10px;
+    width: 100px;
+    height: 40px;
+    color: white;
+    font-size: 20px;
+    border: none;
+}
+
+.task > button:nth-child(2) {
+    background-color: orangered;
+    border-radius: 10px;
+    width: 100px;
+    height: 40px;
+    color: white;
+    font-size: 20px;
+    display: none;
+    border: none;
+}
+
+.track-input {
+    height: auto;
+    width: auto;
+    margin-left: 20px;
+    margin-top: 20px;
+    display: none;
+}
+.inputone > input {
+    width: 95%;
+    height: 40px;
+    font-size: 15px;
+    border-radius: 10px;
+    /* margin-left: 20px; */
+}
+.inputtwo {
+margin-top: 20px;
+}
+label{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.inputtwo > input {
+    width: 95%;
+    height: 40px;
+    font-size: 15px;
+    border-radius: 10px;
+    /* margin-left: 20px; */
+}
+form > button {
+    width:90%;
+    height: 40px;
+    font-size: 15px;
+    border-radius: 10px;
+    margin-top: 30px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    /* margin-left: 50px; */
+}
+
+.check{
+    margin-top: 10px;
+    align-items: center;
+}
+.check> input {
+    width: 20px;
+    height: 20px;
+}
+
+.Task {
+    margin-top: 10px;
+}
+
+.Task > h1 {
+    margin-left: 20px;
+}
+
+.come {
+    height: 40vh;
+    overflow-y: scroll;
+}
+.come::-webkit-scrollbar {
+    display: none;
+}
+
+.paragraph {
+    width: 90%;
+    height: 60px;
+    border-radius: 5px;
+    border: 2px solid black;
+    display: flex;
+    margin-left: 20px;
+    align-items: center;
+    column-gap: 80px;
+    padding: 30px;
+   margin-top: 20px;
+   margin-bottom: 20px;
+}
+
+.paragraph > p{
+    font-size: 18px;
+
+}
+
+button.fan {
+    width: 100px;
+    height: 40px;
+    font-size: 15px;
+    border-radius: 10px;
+    /* margin-top: 30px; */
+    background-color: black;
+    color: white;
+    text-align: center;
+    /* margin-left: 50px; */
+}
+.toggle_track_inputs {
+    display: block;
+}
+@media screen and (max-width:527px) {
+    .container {
+        width: 90%;
+      }
+      /* .header-body {
+        /* display: flex; */
+        /* align-items: center; */
+        /* justify-content: center; */
+        /* justify-content: space-around; */
+        /* margin-top: 20px; */
+        /* column-gap: 45px; 
+       
+    } */
+    .header > h1 {
+        font-size: 18px;
+        margin-left: 10px;
+    }
+      form > button {
+        width: 200px;
+        height: 40px;
+        font-size: 15px;
+        border-radius: 10px;
+        margin-top: 30px;
+        background-color: black;
+        color: white;
+        text-align: center;
+        /* margin-left: 50px; */
+    }
+    body{
+        /* background-color: seagreen; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        /* height: 100vh; */
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        /* .container{
+            width: 35%;
+            margin: auto;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px black;
+        }
+           */
+        
+        .header-body {
+            /* display: flex; */
+            align-items: center;
+            justify-content: center;
+            justify-content: space-around;
+            margin-top: 20px;
+            /* column-gap: 120px; */
+        }
+        
+        .task > button:nth-child(1) {
+            background-color: seagreen;
+            border-radius: 10px;
+            width: 100px;
+            height: 40px;
+            color: white;
+            font-size: 18px;
+            border: none;
+        }
+        
+        .task > button:nth-child(2) {
+            background-color: orangered;
+            border-radius: 10px;
+            width: 100px;
+            height: 40px;
+            color: white;
+            font-size: 18px;
+            display: none;
+            border: none;
+        }
+        
+        .track-input {
+            height: auto;
+            width: auto;
+            margin-left: 20px;
+            margin-top: 20px;
+            display: none;
+        }
+        .inputone > input {
+            width: 95%;
+            height: 40px;
+            font-size: 15px;
+            border-radius: 10px;
+            /* margin-left: 20px; */
+        }
+        .inputtwo {
+        margin-top: 20px;
+        }
+        label{
+            font-size: 20px;
+            font-weight: 500;
+        }
+        
+        .inputtwo > input {
+            width: 95%;
+            height: 40px;
+            font-size: 15px;
+            border-radius: 10px;
+            /* margin-left: 20px; */
+        }
+        form > button {
+            width:90%;
+            height: 40px;
+            font-size: 15px;
+            border-radius: 10px;
+            margin-top: 30px;
+            background-color: black;
+            color: white;
+            text-align: center;
+            /* margin-left: 50px; */
+        }
+        
+        .check{
+            margin-top: 10px;
+            align-items: center;
+        }
+        .check> input {
+            width: 20px;
+            height: 20px;
+        }
+        
+        .Task {
+            margin-top: 10px;
+        }
+        
+        .Task > h1 {
+            margin-left: 15px;
+            font-size: 18px;
+        }
+        .come {
+            height: 40vh;
+            overflow-y: auto;
+        }
+
+        .come::-webkit-scrollbar {
+            display: none;
+        }
+        .paragraph {
+            width: 90%;
+            height: 70px;
+            border-radius: 5px;
+            border: 2px solid black;
+            display: flex;
+            margin-left: 20px;
+            align-items: center;
+            justify-content: space-between;
+            column-gap: 80px;
+            padding: 30px;
+           margin-top: 20px;
+           margin-bottom: 20px;
+        }
+        
+        .paragraph > p{
+            font-size: 18px;
+        
+        }
+        
+        button.fan {
+            width: 120px;
+            height: 40px;
+            font-size: 15px;
+            border-radius: 10px;
+            /* margin-top: 30px; */
+            background-color: black;
+            color: white;
+            text-align: center;
+            /* margin-left: 50px; */
+        }
+        .toggle_track_inputs {
+            display: block;
+        }
+}
